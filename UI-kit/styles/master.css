@@ -1,0 +1,143 @@
+body {
+}
+
+.Block-color-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.Text-Dark-Shade-100 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 152px 0 10px 20px;
+}
+
+.Dark-Shade-100 {
+  width: 70px;
+  height: 70px;
+  background: #1F2041;
+  border-radius: 6px;
+  margin: 145px 20px 10px 150px;
+}
+
+.Text-Dark-Shade-75 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Dark-Shade-75 {
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 32, 65, 0.75);
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Dark-Shade-50 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Dark-Shade-50 {
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 32, 65, 0.5);
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Dark-Shade-25 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Dark-Shade-25 {
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Dark-Shade-25 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Dark-Shade-25 {
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Dark-Shade-5 {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Dark-Shade-5 {
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 32, 65, 0.05);
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Block-purple {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Block-purple {
+  width: 70px;
+  height: 70px;
+  background: #BC9CFF;
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
+
+.Text-Block-green {
+  width: 159px;
+  height: 57px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 20px;
+}
+
+.Block-green {
+  width: 70px;
+  height: 70px;
+  background: #6FCF97;
+  border-radius: 6px;
+  margin: 10px 20px 10px 150px;
+}
