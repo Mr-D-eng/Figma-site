@@ -1,18 +1,47 @@
 body {
 }
 
+container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 140px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+.Block-h1 {
+  padding: 15px;
+}
+
+.Block-h2 {
+  padding: 15px;
+}
+
+.Block-h3 {
+  padding: 15px;
+}
+
+.Block-body {
+  padding: 15px;
+}
+
+.Block-colors {
+  margin-right: 427px;
+}
+
 .Block-color-name {
   display: flex;
   flex-direction: row;
 }
 
 .Text-Dark-Shade-100 {
-  width: 159px;
-  height: 57px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  margin: 152px 0 10px 20px;
+  margin: 10px 0 10px 20px;
 }
 
 .Dark-Shade-100 {
@@ -20,7 +49,7 @@ body {
   height: 70px;
   background: #1F2041;
   border-radius: 6px;
-  margin: 145px 20px 10px 150px;
+  margin: 10px 20px 10px 150px;
 }
 
 .Text-Dark-Shade-75 {
