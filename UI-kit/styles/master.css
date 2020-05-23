@@ -1,4 +1,19 @@
-body {
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v20-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+section {
+  display: flex;
+  flex-direction: row;
 }
 
 container {
@@ -7,25 +22,47 @@ container {
   margin-top: 140px;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
+h1 {
+  margin: 10px 15px 40px 15px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+
+h2 {
+  margin: 10px 15px 40px 15px;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
 }
 
 .Block-h1 {
-  padding: 15px;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 0 15px 15px 15px;
+  margin: 10px 0 35px 0;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
 }
 
 .Block-h2 {
-  padding: 15px;
+  padding: 0 15px 15px 17px;
+  margin: 10px 0 35px 0;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
 }
 
 .Block-h3 {
-  padding: 15px;
+  padding: 0 15px 15px 15px;
+  margin: 10px;
 }
 
 .Block-body {
-  padding: 15px;
+  padding: 0 15px 15px 15px;
+  margin: 10px;
 }
 
 .Block-colors {
