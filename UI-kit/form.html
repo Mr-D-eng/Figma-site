@@ -3,12 +3,37 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/master.css">
+    <link rel="stylesheet" href="./styles/forms.css">
     <title></title>
   </head>
   <body>
     <container>
       <form class="form1" method="post">
-        <h1>Найдем номера под ваши желани</h1>
+        <h1>Найдем номера под<br>ваши желания</h1>
+        <div class="Block-select">
+          <section class="Block-coming">
+            <h3>Прибытие</h3>
+            <select>
+              <option><p>ДД.ММ.ГГГГ</p></option>
+            </select>
+          </section>
+          <section class="Block-leaving">
+            <h3>Выезд</h3>
+            <select>
+              <option><p>ДД.ММ.ГГГГ</p></option>
+            </select>
+          </section>
+        </div>
+        <div class="Block-sumbit">
+          <h3>Гости</h3>
+          <select class="Block-option">
+            <option><p>Сколько гостей</p></option>
+          </select>
+          <button type="button" name="button">
+            <h3>Подобрать номер</h3>
+            <img src="img/arrow_forward.png">
+          </button>
+        </div>
       </form>
     </container>
     <script type="text/javascript" href="./js/master.js"></script>
