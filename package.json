@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "start": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug -d docs --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-D-eng/Figma-site.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-pug": "^0.3.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Mr-D-eng/Figma-site/issues"
+  },
+  "homepage": "https://github.com/Mr-D-eng/Figma-site#readme"
 }
