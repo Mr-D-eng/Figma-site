@@ -1,20 +1,32 @@
 {
-  "name": "Test-site-master",
+  "name": "test-site-master",
   "version": "1.0.0",
-  "description": "Test site",
+  "description": "Figma-Site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
+    "clear": "del-cli dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mr-D-eng/Figma-site.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mr-D-eng/Figma-site/issues"
   },
-  "homepage": "https://github.com/Mr-D-eng/Figma-site#readme"
+  "homepage": "https://github.com/Mr-D-eng/Figma-site#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
