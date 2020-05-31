@@ -18,6 +18,11 @@ select {
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
 	border-radius: 4px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	background: url(../img/expand_more.png) no-repeat right;
+	background-position-x: calc(100% - 8px);
 }
 
 button {
@@ -75,4 +80,9 @@ button img {
 	border-radius: 4px;
 	margin-bottom: 30px;
 	color: rgba(31, 32, 65, 0.75);
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	background: url(../img/expand_more.png) no-repeat right;
+	background-position-x: calc(100% - 8px);
 }
