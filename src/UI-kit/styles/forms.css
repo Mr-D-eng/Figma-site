@@ -10,8 +10,10 @@
 	position: absolute;
 }
 
-form h1 {
-	margin: 40px 0 20px 30px;
+.form2 {
+	width: 320px;
+	height: 369px;
+	position: absolute;
 }
 
 form h3 {
@@ -32,7 +34,7 @@ select {
 	background-position-x: calc(100% - 8px);
 }
 
-button {
+.classic-button {
 	width: 320px;
 	height: 44px;
 	display: flex;
@@ -43,18 +45,22 @@ button {
 	outline: none;
 }
 
-button h3 {
+.classic-button h3 {
 	padding: 5px 50px 0 0;
 	color: #FFFFFF;
 }
 
-button img {
+.classic-button img {
 	padding-top: 3px;
 }
 
 .Block-header{
 	display: flex;
 	flex-direction: row;
+}
+
+.Block-header h1 {
+	margin: 40px 0 20px 30px;
 }
 
 .Block-header h3 {
@@ -67,30 +73,30 @@ button img {
 }
 
 .Block-select {
-	margin: 20px;
+	margin: 0 20px 20px 20px;
 	display: flex;
 	flex-direction: row;
 }
 
-.Block-coming {
+.Block-select-coming {
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex-direction: column;
 	color: rgba(31, 32, 65, 0.75);
 }
 
-.Block-leaving {
+.Block-select-leaving {
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex-direction: column;
 	color: rgba(31, 32, 65, 0.75);
 }
 
-.Block-sumbit {
-	margin: 0 30px 30px 30px;
+.Block-guests {
+	margin: 0 30px 0 30px;
 }
 
-.Block-option {
+.Block-guests-option {
 	width: 320px;
 	height: 44px;
 	background: #FFFFFF;
@@ -106,12 +112,9 @@ button img {
 	background-position-x: calc(100% - 8px);
 }
 
-.Block-guests {
-	margin: 0 30px 0 30px;
-}
-
 .Block-information {
-	width: 400px;
+	width: 320px;
+	margin: 0 0 0 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -125,4 +128,35 @@ button img {
 .Block-information-2 {
 	display: flex;
 	flex-direction: column;
+	text-align: right;
+}
+
+.Block-information-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.button-info {
+	width: 20px;
+	height: 20px;
+	margin: 0 0 0 5px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 50%;
+	color: rgba(31, 32, 65, 0.25);
+	background-color: white;
+	outline: none;
+}
+
+.Block-result {
+	width: 320px;
+	margin: 0 0 0 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Block-sumbit {
+	margin: 0 30px 30px 30px;
 }
