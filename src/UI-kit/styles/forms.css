@@ -117,6 +117,55 @@ select {
 	color: rgba(31, 32, 65, 0.75);
 }
 
+.Block-select-calendar {
+	margin: 0 20px 20px 20px;
+	color: rgba(31, 32, 65, 0.5);
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 0;
+}
+
+.Block-select-calendar th{
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+}
+
+.Block-select-calendar-header {
+	color: #BC9CFF;
+}
+
+.Block-select-calendar-deactivated {
+	color: rgba(31, 32, 65, 0.25);
+}
+
+.Block-select-calendar-one {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+}
+
+.Block-select-calendar-first {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+}
+
+.Block-select-calendar-second {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: #FFFFFF;
+}
+
+.Block-select-calendar-between {
+	background-image: url(../img/rectangle.png);
+}
+
+.Block-select-calendar-between p {
+	color: rgba(31, 32, 65, 0.5);
+}
+
 .Block-guests {
 	margin: 0 30px 0 30px;
 }
@@ -184,4 +233,49 @@ select {
 
 .Block-sumbit {
 	margin: 0 30px 30px 30px;
+}
+
+.Block-sumbit-calendar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+
+.classic-button {
+	width: 320px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+}
+
+.classic-button h3 {
+	padding: 5px 50px 0 0;
+	color: #FFFFFF;
+}
+
+.classic-button img {
+	padding-top: 3px;
+}
+
+.calendar-button-sumbit{
+	outline: none;
+	text-decoration: none;
+}
+
+.calendar-button-sumbit h3 {
+	color: #BC9CFF;
+}
+
+.calendar-button-clear {
+	outline: none;
+	text-decoration: none;
+}
+
+.calendar-button-clear h3 {
+	color: rgba(31, 32, 65, 0.5);
 }
