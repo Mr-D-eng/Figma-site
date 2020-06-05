@@ -13,18 +13,12 @@
           <h1>Регистрация аккаунта</h1>
         </div>
         <div class="Block-select-column">
-          <section class="Block-select-firstname">
+          <section class="Block-select-text">
             <input type="text" name="" placeholder="Имя">
           </section>
-          <section class="Block-select-secondname">
+          <section class="Block-select-text">
             <input type="text" name="" placeholder="Фамилия">
           </section>
-        </div>
-        <div class="Block-birthday">
-          <h3>Дата рождения</h3>
-          <select class="Block-birthday-option">
-            <option><p>ДД.ММ.ГГГГ</p></option>
-          </select>
         </div>
         <div class="Block-sex">
           <label class="Block-radio-switch">
@@ -38,12 +32,18 @@
           </label>
           <p>Женщина</p>
         </div>
+        <div class="Block-birthday">
+          <h3>Дата рождения</h3>
+          <select class="Block-birthday-option">
+            <option value="" disabled selected style='display:none;'><p>ДД.ММ.ГГГГ</p></option>
+          </select>
+        </div>
         <div class="Block-select-column">
           <h3>Данные для входа в сервис</h3>
-          <section class="Block-select-firstname">
+          <section class="Block-select-text">
             <input type="text" placeholder="Email">
           </section>
-          <section class="Block-select-secondname">
+          <section class="Block-select-text">
             <input type="text" placeholder="Пароль">
           </section>
         </div>
@@ -56,8 +56,17 @@
         </div>
         <div class="Block-sumbit">
           <button class="classic-button" type="button" name="button">
+            <div class="clear-block"></div>
             <h3>Перейти к оплате</h3>
             <img src="img/arrow_forward.png">
+          </button>
+        </div>
+        <div class="Block-authorization">
+          <p class="black-paragraph">Уже есть аккаунт на Toxin</p>
+          <button class="transparent-button" type="button" name="button">
+            <div class="Block-transparent-button">
+              <h3>Войти</h3>
+            </div>
           </button>
         </div>
       </form>
