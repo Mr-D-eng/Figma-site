@@ -28,6 +28,11 @@ container {
 	height: 646px;
 }
 
+.form4 {
+	width: 380px;
+	height: 358px;
+}
+
 form h3 {
 	margin: 0 30px 5px 0;
 }
@@ -62,7 +67,11 @@ select {
 }
 
 .Block-header-calendar img{
-	margin: 20px 20px 0 20px;
+	margin: 22px 22px 0 22px;
+}
+
+.Block-header-calendar h2{
+	margin-top: 20px ;
 }
 
 .Block-header h3 {
@@ -80,14 +89,7 @@ select {
 	flex-direction: row;
 }
 
-.Block-select-coming {
-	margin: 0 10px 0 10px;
-	display: flex;
-	flex-direction: column;
-	color: rgba(31, 32, 65, 0.75);
-}
-
-.Block-select-leaving {
+.Block-select-date {
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex-direction: column;
@@ -95,7 +97,7 @@ select {
 }
 
 .Block-select-calendar {
-	margin: 0 20px 20px 20px;
+	margin: 27px 0 20px 23px;
 	color: rgba(31, 32, 65, 0.5);
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -143,9 +145,36 @@ select {
 	color: rgba(31, 32, 65, 0.5);
 }
 
+.Block-select-column {
+	margin-left: 30px;
+}
+
+.Block-select-text input {
+	width: 320px;
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+}
+
+.Block-select-option {
+	width: 320px;
+	height: 44px;
+	margin-bottom: 20px;
+	padding-left: 15px;
+}
+
 .Block-sex {
 	display: flex;
 	flex-direction: row;
+	margin: 0 0 20px 30px;
+}
+
+.Block-birthday {
+	margin: 0 0 20px 30px;
 }
 
 .Block-radio-switch {
@@ -153,6 +182,11 @@ select {
   display: inline-block;
   width: 20px;
   height: 20px;
+	margin-right: 10px
+}
+
+.Block-sex p {
+	margin-right: 20px;
 }
 
 .Block-radio-switch input {display:none;}
@@ -191,15 +225,17 @@ input:checked + .radio-switcher:before {
 .Block-select-checkbox {
 	display: flex;
 	flex-direction: row;
+	margin: 0 0 20px 30px;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
+  width: 38px;
   height: 20px;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	border-radius: 10px;
+	margin-right: 10px;
 }
 
 .switch input {display:none;}
@@ -247,29 +283,9 @@ input:checked + .slider:before {
 	border-radius: 10px;
 }
 
-.Block-guests {
-	margin: 0 30px 0 30px;
-}
-
-.Block-guests-option {
-	width: 320px;
-	height: 44px;
-	background: #FFFFFF;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	box-sizing: border-box;
-	border-radius: 4px;
-	margin-bottom: 30px;
-	color: rgba(31, 32, 65, 0.75);
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-	background: url(../img/expand_more.png) no-repeat right;
-	background-position-x: calc(100% - 8px);
-}
-
 .Block-information {
 	width: 320px;
-	margin: 0 0 0 30px;
+	margin: 0 0 20px 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -290,6 +306,7 @@ input:checked + .slider:before {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .button-info {
@@ -304,16 +321,24 @@ input:checked + .slider:before {
 	outline: none;
 }
 
+.Block-information-2 p {
+	margin-bottom: 10px;
+}
+
 .Block-result {
 	width: 320px;
-	margin: 0 0 0 30px;
+	margin: 0 0 20px 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .Block-sumbit {
-	margin: 0 30px 30px 30px;
+	margin: 13px 30px 30px 30px;
+}
+
+.Block-sumbit-authorization {
+	margin: 10px 30px 30px 30px;
 }
 
 .Block-sumbit-calendar {
@@ -328,7 +353,8 @@ input:checked + .slider:before {
 	height: 44px;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: space-between;
+	align-items: center;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
 	outline: none;
@@ -340,7 +366,6 @@ input:checked + .slider:before {
 	height: 44px;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	opacity: 0.5;
 	border-radius: 22px;
@@ -349,12 +374,17 @@ input:checked + .slider:before {
 }
 
 .classic-button h3 {
-	padding: 5px 50px 0 0;
+	margin-top: 5px;
 	color: #FFFFFF;
 }
 
 .classic-button img {
-	padding-top: 3px;
+	padding: 4px 5px;
+}
+
+.clear-block {
+	width: 25px;
+	height: 25px;
 }
 
 .calendar-button-sumbit{
@@ -363,6 +393,7 @@ input:checked + .slider:before {
 }
 
 .calendar-button-sumbit h3 {
+	width: 70px;
 	color: #BC9CFF;
 }
 
@@ -373,4 +404,44 @@ input:checked + .slider:before {
 
 .calendar-button-clear h3 {
 	color: rgba(31, 32, 65, 0.5);
+}
+
+.Block-authorization {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 30px;
+}
+
+.Block-transparent-button {
+	width: 96px;
+	height: 40px;
+	border-radius: 22px;
+	background-color: white;
+}
+
+.transparent-button {
+	width: 100px;
+	height: 44px;
+	padding: 2px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	text-decoration: none;
+	border: 0;
+	margin-right: 30px;
+}
+
+.transparent-button h3 {
+	color: #BC9CFF;
+	padding: 12px 0 0 20px;
+}
+
+.transparent-button:active {
+	opacity: 0.5;
+}
+
+.black-paragraph {
+	color: #000000;
+	margin: 9px 35px 0 0;
 }
