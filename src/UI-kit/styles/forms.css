@@ -33,6 +33,11 @@ container {
 	height: 358px;
 }
 
+.form5 {
+	width: 270px;
+	height: 257px;
+}
+
 form h3 {
 	margin: 0 30px 5px 0;
 }
@@ -51,9 +56,16 @@ select {
 	background-position-x: calc(100% - 8px);
 }
 
-.Block-header{
+.Block-header {
 	display: flex;
 	flex-direction: row;
+}
+
+.Block-header-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
 }
 
 .Block-header h1 {
@@ -83,10 +95,85 @@ select {
 	margin: 50px 10px 0 0;
 }
 
+.Block-header-line h2 {
+	margin: 0 0 0 20px;
+}
+
+.Block-header-line h3 {
+	margin: 7px 0 0 5px;
+	color: #BC9CFF;
+}
+
+.Block-header-line p {
+	margin: 2px 30px 0 35px;
+}
+
+
 .Block-select-row {
 	margin: 0 20px 20px 20px;
 	display: flex;
 	flex-direction: row;
+}
+
+.Block-select-column-background {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+}
+
+.Block-select-row-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 29px;
+}
+
+.Block-select-row-circles {
+	display: flex;
+	flex-direction: row;
+}
+
+.Block-select-column-circles {
+	margin-top: 130px;
+	height: 150px;
+}
+
+.select-button {
+	width: 42px;
+	height: 44px;
+	border: 0;
+	margin-top: 55px;
+}
+
+.prev-button img{
+		transform: rotate(180deg);
+		margin: 15px 0 0 18px;
+}
+
+.next-button img{
+		margin: 15px 16px;
+}
+
+.Block-select-circles {
+	width: 255px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.circles-button {
+	width: 7.5px;
+	height: 7.5px;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+	margin-left: 3.75px;
+	border-radius: 50%;
+}
+
+.circles-button-active {
+	background: #FFFFFF;
 }
 
 .Block-select-date {
@@ -444,4 +531,25 @@ input:checked + .slider:before {
 .black-paragraph {
 	color: #000000;
 	margin: 9px 35px 0 0;
+}
+
+.line {
+	margin: 10px 0 0 20px;
+	border: 0.5px solid rgba(31, 32, 65, 0.1);
+	width: 230px;
+	height: 1px;
+}
+
+.Block-stars {
+	margin: 7px 10px 0 15px;
+}
+
+.star-button {
+	border: 0;
+	background-color: white;
+	width: 25px;
+}
+
+.Block-feedback {
+	margin: 8px 31px 0 0;
 }
