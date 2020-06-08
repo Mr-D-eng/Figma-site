@@ -1,0 +1,107 @@
+.Main-block {
+  width: 1135px;
+  margin: 140px 0 0 150px;
+}
+
+.Block-description {
+  margin: 10px 15px 40px 15px;
+}
+
+.Block-description-text {
+  margin: 0 15px 40px 15px;
+}
+
+.Block-h1 {
+  font-size: 24px;
+  line-height: 29px;
+  padding: 0 15px 15px 15px;
+  margin: 10px 0 35px 0;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.Block-h2 {
+  padding: 0 15px 15px 17px;
+  margin: 10px 0 35px 2px;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+}
+
+.Block-h3 {
+  padding: 0 15px 15px 15px;
+  margin: 10px 0 35px 10px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.Block-body {
+  padding: 0 15px 15px 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.Block-colors {
+  margin-right: 427px;
+}
+
+.Block-color-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.Block-text {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 20px 0 10px 20px;
+}
+
+.Block-text p {
+  margin-top: 5px;
+}
+
+.Block-color {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin: 10px 20px 10px 0;
+}
+
+.Dark-Shade-100 {
+  background: #1F2041;
+}
+
+.Dark-Shade-75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+
+.Dark-Shade-50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+
+.Dark-Shade-25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.Dark-Shade-5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+
+.Block-purple {
+  background: #BC9CFF;
+}
+
+.Block-green {
+  background: #6FCF97;
+}
+
+.Block-textfield {
+	width: 320px;
+}
