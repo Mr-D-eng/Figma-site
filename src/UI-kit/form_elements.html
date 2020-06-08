@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/master.css">
+    <link rel="stylesheet" href="./styles/form_elements.css">
+    <title></title>
+  </head>
+  <body>
+    <container>
+      <form class="Form_Elements" method="post">
+        <div class="Block-column">
+          <div class="Block-textfield-standart">
+            <div class="Block-row row-between">
+              <h3>text field</h3>
+              <p>default</p>
+            </div>
+            <section>
+              <input type="text" placeholder="Email">
+            </section>
+          </div>
+          <div class="Block-textfield-standart">
+            <div class="Block-row row-between">
+              <h3>text field</h3>
+              <p>Hover / Focus</p>
+            </div>
+            <section>
+              <input class="Dark-Shade-75" type="text" value="This is pretty awesome">
+            </section>
+          </div>
+          <div class="Block-textfield-standart">
+            <div class="Block-row row-between">
+              <h3>dropdown</h3>
+              <p>default</p>
+            </div>
+            <select>
+              <option><p>Сколько гостей</p></option>
+            </select>
+          </div>
+          <div class="Block-textfield-standart">
+            <div class="Block-row row-between">
+              <h3>masked text field</h3>
+              <p>default</p>
+            </div>
+            <section>
+              <input type="text" placeholder="ДД.ММ.ГГГГ">
+            </section>
+          </div>
+          <div class="Block-textfield-standart" style="margin-top: 20px">
+            <div class="Block-row" style="height: 45px">
+              <div class="Block-column">
+                <div class="Block-dropdown">
+                  <h3>date dropdown</h3>
+                  <select>
+                    <option><p>ДД.ММ.ГГГГ</p></option>
+                  </select>
+                </div>
+              </div>
+              <div class="Block-column">
+                <div class="Block-dropdown">
+                  <h3>date dropdown</h3>
+                  <select>
+                    <option><p>19.08.2019</p></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Block-textfield-little">
+            <h3>filter date dropdown</h3>
+            <select>
+              <option><p>19 авг - 23 авг</p></option>
+            </select>
+          </div>
+          <div class="Block-textfield-little">
+            <h3>subscription text field</h3>
+            <section>
+              <div class="Block-row">
+                <input class="clear-input" type="text" placeholder="Email">
+                <button class="button-arrow" type="button" name="button"></button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </form>
+    </container>
+    <script type="text/javascript" href="./js/master.js"></script>
+  </body>
+</html>
