@@ -9,79 +9,254 @@
   <body>
     <container>
       <form class="Form_Elements" method="post">
-        <div class="Block-column">
-          <div class="Block-textfield-standart">
-            <div class="Block-row row-between">
-              <h3>text field</h3>
-              <p>default</p>
+
+        <!-- First row -->
+        <div class="Block-row first-row">
+          <!-- First column -->
+          <div class="Block-column first-column">
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <h3>text field</h3>
+                <p>default</p>
+              </div>
+              <section class="Block-textfield-default">
+                <input type="text" placeholder="Email">
+              </section>
             </div>
-            <section>
-              <input type="text" placeholder="Email">
-            </section>
-          </div>
-          <div class="Block-textfield-standart">
-            <div class="Block-row row-between">
-              <h3>text field</h3>
-              <p>Hover / Focus</p>
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <h3>text field</h3>
+                <p>Hover / Focus</p>
+              </div>
+              <section class="Block-textfield-hover">
+                <input class="Dark-Shade-75" type="text" value="This is pretty awesome">
+              </section>
             </div>
-            <section>
-              <input class="Dark-Shade-75" type="text" value="This is pretty awesome">
-            </section>
-          </div>
-          <div class="Block-textfield-standart">
-            <div class="Block-row row-between">
-              <h3>dropdown</h3>
-              <p>default</p>
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <h3>dropdown</h3>
+                <p>default</p>
+              </div>
+              <select class="Block-textfield-hover">
+                <option><p>Сколько гостей</p></option>
+              </select>
             </div>
-            <select>
-              <option><p>Сколько гостей</p></option>
-            </select>
-          </div>
-          <div class="Block-textfield-standart">
-            <div class="Block-row row-between">
-              <h3>masked text field</h3>
-              <p>default</p>
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <h3>masked text field</h3>
+                <p>default</p>
+              </div>
+              <section  class="Block-MaskedTextField-default">
+                <input type="text" placeholder="ДД.ММ.ГГГГ">
+              </section>
             </div>
-            <section>
-              <input type="text" placeholder="ДД.ММ.ГГГГ">
-            </section>
-          </div>
-          <div class="Block-textfield-standart" style="margin-top: 20px">
-            <div class="Block-row" style="height: 45px">
-              <div class="Block-column">
-                <div class="Block-dropdown">
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <div class="Block-column">
                   <h3>date dropdown</h3>
-                  <select>
+                  <select class="Block-DateDropdown">
                     <option><p>ДД.ММ.ГГГГ</p></option>
                   </select>
                 </div>
-              </div>
-              <div class="Block-column">
-                <div class="Block-dropdown">
+                <div class="Block-column">
                   <h3>date dropdown</h3>
-                  <select>
+                  <select class="Block-DateDropdown">
                     <option><p>19.08.2019</p></option>
                   </select>
                 </div>
               </div>
             </div>
+            <div class="Block-content mini">
+              <h3>filter date dropdown</h3>
+              <select class="Block-FilterDateDropdown">
+                <option><p>19 авг - 23 авг</p></option>
+              </select>
+            </div>
+            <div class="Block-content mini">
+              <h3>subscription text field</h3>
+              <section class="Block-SubscriptionTextField">
+                <div class="Block-row">
+                  <input class="clear-input" type="text" placeholder="Email">
+                  <button class="button-arrow" type="button" name="button"></button>
+                </div>
+              </section>
+            </div>
           </div>
-          <div class="Block-textfield-little">
-            <h3>filter date dropdown</h3>
-            <select>
-              <option><p>19 авг - 23 авг</p></option>
-            </select>
-          </div>
-          <div class="Block-textfield-little">
-            <h3>subscription text field</h3>
-            <section>
+          <!-- Second column -->
+          <div class="Block-column second-column">
+            <h3>Checkbox Buttons</h3>
+            <section class="Block-row checkbox_buttons">
+              <label class="Block-CheckboxButton">
+                <input type="checkbox">
+                <span class="CheckboxButton"></span>
+              </label>
+              <p>Можно курить</p>
+            </section>
+            <section class="Block-row">
+              <label class="Block-CheckboxButton">
+                <input type="checkbox">
+                <span class="CheckboxButton"></span>
+              </label>
+              <p>Можно с питомцами</p>
+            </section>
+            <section class="Block-row">
+              <label class="Block-CheckboxButton">
+                <input type="checkbox">
+                <span class="CheckboxButton"></span>
+              </label>
+              <p>Можно пригласить гостей <br> (до 10 человек)</p>
+            </section>
+            <div class="Block-RadioButtons">
+              <h3>Radio Buttons</h3>
               <div class="Block-row">
-                <input class="clear-input" type="text" placeholder="Email">
-                <button class="button-arrow" type="button" name="button"></button>
+                <section class="Block-row radio_buttons">
+                  <label class="Block-RadioButton">
+                    <input type="checkbox">
+                    <span class="radio-switcher"></span>
+                  </label>
+                  <p>Мужчина</p>
+                </section>
+                <section class="Block-row">
+                  <label class="Block-RadioButton">
+                    <input type="checkbox">
+                    <span class="radio-switcher"></span>
+                  </label>
+                  <p>Женщина</p>
+                </section>
               </div>
+            </div>
+            <div class="Block-Toggle">
+              <h3>Toggle</h3>
+              <section class="Block-ToggleButton">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <p>Получать спецпредложения</p>
+              </section>
+              <section class="Block-ToggleButton">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <p>Получать спецпредложения</p>
+              </section>
+            </div>
+            <div class="Block-LikeButton">
+              <h3>Like Button</h3>
+              <div class="Block-row">
+                <section class="Block-LikeButton">
+                  <label class="like">
+                    <input type="checkbox">
+                    <span class="like_button"><p>2</p></span>
+                  </label>
+                </section>
+                <section class="Block-LikeButton">
+                  <label class="like">
+                    <input type="checkbox">
+                    <span class="like_button"><p>12</p></span>
+                  </label>
+                </section>
+              </div>
+            </div>
+            <div class="Block-RateButton">
+              <h3>Like Button</h3>
+              <div class="Block-row row-between">
+                <section class="Block-stars">
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star_border.png"></button>
+                </section>
+                <section class="Block-stars">
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                  <button class="star-button" type="button" name="button"><img src="img/star.png"></button>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- Third column -->
+          <div class="Block-column third-column">
+            <section>
+              <input type="range" id="volume" name="volume" min="0" max="11">
             </section>
           </div>
         </div>
+
+        <!-- Second row -->
+        <div class="Block-row second-row">
+          <!-- First column -->
+          <div class="Block-column first-column">
+            <div class="Block-content decription">
+              <div class="Block-row row-between">
+                <h3>dropdown</h3>
+                <p>default</p>
+              </div>
+              <section>
+                <select>
+                  <option><p>2 спальни, 2 кровати...</p></option>
+                </select>
+              </section>
+            </div>
+            <div class="Block-textfield-little">
+              <div class="Block-row row-between">
+                <h3>dropdown</h3>
+                <p>default</p>
+              </div>
+              <section class="Block-dropdown-default-open">
+                <div class="Block-row">
+                  <input class="clear-input" type="text" value="2 спальни, 2 кровати...">
+                  <button class="button-more" type="button" name="button"></button>
+                </div>
+                <div class="Block-column">
+                  <section class="Block-SectionFirst">
+                    <div class="Block-row row-between">
+                      <h3>спальни</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round" type="button" name="button"><p>-</p></button>
+                          <h3>2</h3>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                  </section>
+                  <div class="Block-row row-between">
+                    <h3>кровати</h3>
+                  </div>
+                  <div class="Block-row row-between">
+                    <h3>ванные комнаты</h3>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- Second column -->
+          <div class="Block-column second-column">
+
+          </div>
+          <!-- Third column -->
+          <div class="Block-column third-column">
+
+          </div>
+        </div>
+
+        <!-- Third row -->
+        <div class="Block-row third-row">
+          <!-- First column -->
+          <div class="Block-column first-column">
+
+          </div>
+          <!-- Second column -->
+          <div class="Block-column big-column">
+
+          </div>
+        </div>
+
       </form>
     </container>
     <script type="text/javascript" href="./js/master.js"></script>
