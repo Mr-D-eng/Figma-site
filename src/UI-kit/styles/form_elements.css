@@ -1,35 +1,92 @@
-.Block-textfield-standart {
+.decription p {
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+.first-column {
 	width: 320px;
-	margin-bottom: 22px;
 }
 
-.Block-textfield-little {
-	width: 266px;
-	margin-top: 40px;
+.second-column {
+	width: 260px;
+	margin-left: 125px;
 }
 
-.Block-textfield-little h3 {
+.third-column {
+	width: 320px;
+	margin-left: 125px;
+}
+
+.big-column {
+	width: 320px;
+	margin-left: 125px;
+}
+
+.first-row {
+
+}
+
+.second-row {
+
+}
+
+.third-row {
+
+}
+
+.Block-content h3 {
 	margin-bottom: 5px;
 }
 
-.Block-row {
-	height: 19px;
+.mini {
+	width: 266px;
 }
 
-.Block-column {
-	margin-right: 20px;
+.Block-textfield-default {
+	margin-bottom: 20px;
 }
 
-.Block-row p {
-	text-transform: uppercase;
-	font-size: 12px;
-	line-height: 15px;
+.Block-textfield-hover {
+	margin-bottom: 20px;
 }
 
-.Block-dropdown {
-	width: 150px;
+.Block-dropdown-default {
+	margin-bottom: 20px;
 }
 
-.Block-dropdown select {
-	margin-top: 7px;
+.Block-MaskedTextField-default {
+	margin-bottom: 40px;
+}
+
+.Block-DateDropdown {
+	margin-bottom: 40px;
+}
+
+.Block-FilterDateDropdown {
+	margin-bottom: 40px;
+}
+
+.Block-RadioButtons {
+	margin-top: 30px;
+}
+
+.Block-RadioButtons h3 {
+	margin-bottom: 17px;
+}
+
+.Block-Toggle h3 {
+	margin-top: 35px;
+}
+
+.Block-ToggleButton {
+	margin-top: 14px;
+}
+
+.Block-LikeButton h3{
+	margin: 43px 0 11px 0;
+}
+
+.Block-RateButton h3{
+	margin: 28px 0 15px 0;
 }

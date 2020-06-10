@@ -71,6 +71,7 @@ select {
   appearance: none;
 	background: url(../img/expand_more_grey.png) no-repeat right;
 	background-position-x: calc(100% - 15px);
+	outline: none;
 }
 
 input {
@@ -81,6 +82,7 @@ input {
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding-left: 15px;
+	outline: none;
 }
 
 .Dark-Shade-100 {
@@ -121,7 +123,232 @@ input {
 	flex-direction: row;
 }
 
+.Block-DateDropdown {
+	width: 150px;
+}
+
+.Block-dropdown-select {
+	width: 92px;
+	margin: 6px 7px 0 0;
+}
+
+.Block-RadioButton {
+	position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+	margin-right: 10px;
+}
+
+.Block-RadioButton input {display:none;}
+
+.radio-switcher {
+	position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.radio-switcher:before {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+	background: white;
+	border-radius: 10px;
+}
+
+input:checked + .radio-switcher:before {
+	box-sizing: border-box;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 10px;
+}
+
+input:checked + .radio-switcher {
+	border: 1px solid #BC9CFF;
+}
+
+.Block-ToggleButton {
+	display: flex;
+	flex-direction: row;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+	box-sizing: border-box;
+}
+
+.switch:after {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+	border-radius: 10px;
+	border: 1px solid #BC9CFF;
+	box-sizing: border-box;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+	background: rgba(31, 32, 65, 0.25);
+	border-radius: 10px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 10px;
+}
+
+.Block-CheckboxButton {
+	position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+	margin: 0 10px 10px 0;
+}
+
+.Block-CheckboxButton input {display:none;}
+
+.CheckboxButton {
+	position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.CheckboxButton:before {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+	background: white;
+}
+
+input:checked + .CheckboxButton:before {
+	box-sizing: border-box;
+	background: url(../img/vector.png) no-repeat center;
+}
+
+input:checked + .CheckboxButton {
+	border: 1px solid #BC9CFF;
+}
+
+.like {
+	position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+	margin: 0 10px 10px 0;
+}
+
+.Block-LikeButton input {display:none;}
+
+.like_button {
+	position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .4s;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.like_button p {
+	color: rgba(31, 32, 65, 0.25);
+	text-align: right;
+	margin: 4px 10px 0 0;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.like_button:before {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+	background: white;
+	background: url(../img/favorite_border.png) no-repeat center;
+}
+
+input:checked + .like_button:before {
+	box-sizing: border-box;
+	background: url(../img/favorite.png) no-repeat center;
+}
+
+input:checked + .like_button {
+	border: 1px solid #BC9CFF;
+}
+
+input:checked + .like_button p {
+	color: #BC9CFF;
+}
+
+.Block-stars {
+	padding: 0;
+}
+
+.star-button {
+	border: 0;
+	background-color: white;
+	width: 20px;
+	padding: 0;
+}
+
 .row-between {
+	display: flex;
   justify-content: space-between;
 }
 
@@ -142,4 +369,35 @@ input {
 	outline: none;
 	background: url(../img/arrow_forward_blue.png) no-repeat right;
 	background-position-x: calc(100% - 11px);
+}
+
+.button-more {
+	width: 44px;
+	height: 44px;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	border-left: none;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	outline: none;
+	background: url(../img/expand_more_grey.png) no-repeat right;
+	background-position-x: calc(100% - 15px);
+}
+
+.button-round {
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 22px;
+	background: white;
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.checkbox_buttons {
+	margin-top: 16px;
+}
+
+.radio_buttons {
+	margin-right: 15px;
 }
