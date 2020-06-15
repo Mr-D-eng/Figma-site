@@ -1,21 +1,15 @@
 {
   "name": "test-site-master",
   "version": "1.0.0",
-  "description": "Figma-Site",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
-    "start": "webpack-dev-server --mode development --open"
-    "clear": "del-cli dist"
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "serv": "static build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mr-D-eng/Figma-site.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/Mr-D-eng/Figma-site.git",
+  "author": "Danil <aleshaalmey@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mr-D-eng/Figma-site/issues"
@@ -25,6 +19,10 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-static": "^0.7.11",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"

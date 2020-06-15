@@ -1,2 +1,2 @@
-import createMenu from './js/master';
+import createMenu from './js/main';
 console.log("Index here!")
