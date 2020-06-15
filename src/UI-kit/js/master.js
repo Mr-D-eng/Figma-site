@@ -1,1 +1,1 @@
-console.log("Работает")
+console.log("hello, world");

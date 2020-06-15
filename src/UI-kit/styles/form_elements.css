@@ -1,7 +1,14 @@
-.decription p {
+.description p {
 	font-size: 12px;
 	line-height: 15px;
 	text-transform: uppercase;
+}
+
+.clear p {
+	text-transform: none;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 10px;
 }
 
 .first-column {
@@ -9,13 +16,13 @@
 }
 
 .second-column {
-	width: 260px;
+	width: 320px;
 	margin-left: 125px;
 }
 
 .third-column {
 	width: 320px;
-	margin-left: 125px;
+	margin-left: 133px;
 }
 
 .big-column {
@@ -23,16 +30,8 @@
 	margin-left: 125px;
 }
 
-.first-row {
-
-}
-
 .second-row {
-
-}
-
-.third-row {
-
+	margin-top: 100px;
 }
 
 .Block-content h3 {
@@ -41,6 +40,11 @@
 
 .mini {
 	width: 266px;
+}
+
+.buttons-size {
+	width: 218px;
+	height: 195px;
 }
 
 .Block-textfield-default {
@@ -89,4 +93,72 @@
 
 .Block-RateButton h3{
 	margin: 28px 0 15px 0;
+}
+
+.Block-RangeSlider {
+	margin-top: 16px;
+	height: 50px;
+}
+
+.transparent-button {
+	margin: 15px 0 15px 0;
+}
+
+.transparent-button-active {
+	width: 100px;
+	height: 44px;
+	padding: 2px;
+	display: flex;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	text-decoration: none;
+	border: 0;
+	opacity: 0.5;
+	margin: 15px 0 15px 0;
+}
+
+.transparent-button-active h3 {
+	color: #BC9CFF;
+	padding-top: 12px;
+}
+
+.classic-MiniButton {
+	margin: 15px 0 15px 0;
+}
+
+.classic-MiniButton-active {
+	width: 100px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.5;
+	border-radius: 22px;
+	outline: none;
+	border: 0px;
+	margin: 15px 0 15px 0;
+}
+
+.classic-MiniButton-active h3 {
+	margin-top: 5px;
+	color: #FFFFFF;
+}
+
+.calendar-button-sumbit{
+	margin: 15px 0 15px 0;
+}
+
+.calendar-button-clear {
+	margin: 15px 0 15px 0;
+}
+
+.classic-button {
+	margin: 15px 0 15px 0;
+}
+
+.Block-pagination {
+	margin-top: 20px;
 }

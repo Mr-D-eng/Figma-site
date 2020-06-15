@@ -64,7 +64,8 @@ select {
 	background: #FFFFFF;
 	border: 1px solid rgba(31, 32, 65, 0.25);
 	box-sizing: border-box;
-	border-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
 	padding-left: 15px;
 	-webkit-appearance: none;
   -moz-appearance: none;
@@ -290,7 +291,7 @@ input:checked + .CheckboxButton {
 
 .Block-LikeButton input {display:none;}
 
-.like_button {
+.like-button {
 	position: absolute;
   cursor: pointer;
   top: 0;
@@ -304,7 +305,7 @@ input:checked + .CheckboxButton {
 	border-radius: 10px;
 }
 
-.like_button p {
+.like-button p {
 	color: rgba(31, 32, 65, 0.25);
 	text-align: right;
 	margin: 4px 10px 0 0;
@@ -312,7 +313,7 @@ input:checked + .CheckboxButton {
 	line-height: 12px;
 }
 
-.like_button:before {
+.like-button:before {
 	position: absolute;
   content: "";
   height: 12px;
@@ -323,17 +324,62 @@ input:checked + .CheckboxButton {
 	background: url(../img/favorite_border.png) no-repeat center;
 }
 
-input:checked + .like_button:before {
+input:checked + .like-button:before {
 	box-sizing: border-box;
 	background: url(../img/favorite.png) no-repeat center;
 }
 
-input:checked + .like_button {
+input:checked + .like-button {
 	border: 1px solid #BC9CFF;
 }
 
-input:checked + .like_button p {
+input:checked + .like-button p {
 	color: #BC9CFF;
+}
+
+.RangeSlider input {display:none;}
+
+.RangeSlider {
+	width: 266px;
+	height: 6px;
+}
+
+.range-slider {
+	position: absolute;
+	width: 266px;
+	height: 6px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.slider-circle {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+	bottom: -6px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+
+.slider-line {
+	position: absolute;
+	left: 80px;
+	width: 88px;
+	height: 6px;
+	bottom: -1px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.right {
+	left: 77px;
+}
+
+.left {
+	right: 92px;
 }
 
 .Block-stars {
@@ -345,6 +391,134 @@ input:checked + .like_button p {
 	background-color: white;
 	width: 20px;
 	padding: 0;
+	outline: none;
+}
+
+.classic-MiniButton {
+	width: 100px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	border: 0px;
+}
+
+.classic-MiniButton:active {
+	width: 100px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.5;
+	border-radius: 22px;
+	outline: none;
+	border: 0px;
+}
+
+.classic-MiniButton h3 {
+	margin-top: 5px;
+	color: #FFFFFF;
+}
+
+.classic-button {
+	width: 320px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	border: 0px;
+}
+
+.classic-button:active {
+	width: 320px;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	opacity: 0.5;
+	border-radius: 22px;
+	outline: none;
+	border: 0px;
+}
+
+.classic-button h3 {
+	margin-top: 5px;
+	color: #FFFFFF;
+}
+
+.classic-button img {
+	padding: 4px 5px;
+}
+
+.Block-transparent-button {
+	width: 96px;
+	height: 40px;
+	border-radius: 22px;
+	background-color: white;
+}
+
+.transparent-button {
+	width: 100px;
+	height: 44px;
+	padding: 2px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	text-decoration: none;
+	border: 0;
+}
+
+.transparent-button h3 {
+	color: #BC9CFF;
+	padding-top: 12px;
+}
+
+.transparent-button:active {
+	opacity: 0.5;
+}
+
+.calendar-button-sumbit{
+	width: 84px;
+	height: 15px;
+	outline: none;
+	border: 0;
+	background: white;
+}
+
+.calendar-button-sumbit:active h3 {
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.calendar-button-sumbit h3 {
+	width: 84px;
+	height: 15px;
+	color: #BC9CFF;
+}
+
+.calendar-button-clear {
+	width: 84px;
+	height: 15px;
+	outline: none;
+	border: 0;
+	background: white;
+}
+
+.calendar-button-clear h3 {
+	width: 84px;
+	height: 15px;
+	color: rgba(31, 32, 65, 0.5);
+}
+
+.calendar-button-clear:active h3 {
+	color: rgba(31, 32, 65, 0.25);
 }
 
 .row-between {
@@ -352,10 +526,19 @@ input:checked + .like_button p {
   justify-content: space-between;
 }
 
+.column-between {
+	display: flex;
+	align-content: space-between;
+}
+
 .clear-input {
 	border-bottom-right-radius: 0px;
 	border-top-right-radius: 0px;
 	border-right: none;
+}
+
+.clear-dropdown {
+	border: none;
 }
 
 .button-arrow {
@@ -375,10 +558,7 @@ input:checked + .like_button p {
 	width: 44px;
 	height: 44px;
 	background: white;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	border-left: none;
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
+	border: none;
 	outline: none;
 	background: url(../img/expand_more_grey.png) no-repeat right;
 	background-position-x: calc(100% - 15px);
@@ -400,4 +580,69 @@ input:checked + .like_button p {
 
 .radio_buttons {
 	margin-right: 15px;
+}
+
+.pagination-buttons {
+	width: 40px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	background: white;
+}
+
+.dots {
+	display: flex;
+	align-items: center;
+	width: 25px;
+	height: 40px;
+	padding-left: 15px;
+}
+
+.selected {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: white;
+	font-size: 12px;
+	line-height: 15px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.arrow {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+}
+
+.Block-dropdown-default-open {
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.Block-Section {
+	height: 100%;
+	padding-bottom: 7px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.Block-Section h3 {
+	display: flex;
+	margin: 13px 0 0 15px;
+}
+
+.Block-Section p {
+	display: flex;
+	align-items: center;
+}
+
+.button-round p {
+	display: flex;
+	justify-content: center;
+}
+
+.transparent25 {
+	opacity: 0.25;
 }

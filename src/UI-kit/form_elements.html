@@ -14,7 +14,7 @@
         <div class="Block-row first-row">
           <!-- First column -->
           <div class="Block-column first-column">
-            <div class="Block-content decription">
+            <div class="Block-content description">
               <div class="Block-row row-between">
                 <h3>text field</h3>
                 <p>default</p>
@@ -23,7 +23,7 @@
                 <input type="text" placeholder="Email">
               </section>
             </div>
-            <div class="Block-content decription">
+            <div class="Block-content description">
               <div class="Block-row row-between">
                 <h3>text field</h3>
                 <p>Hover / Focus</p>
@@ -32,7 +32,7 @@
                 <input class="Dark-Shade-75" type="text" value="This is pretty awesome">
               </section>
             </div>
-            <div class="Block-content decription">
+            <div class="Block-content description">
               <div class="Block-row row-between">
                 <h3>dropdown</h3>
                 <p>default</p>
@@ -41,7 +41,7 @@
                 <option><p>Сколько гостей</p></option>
               </select>
             </div>
-            <div class="Block-content decription">
+            <div class="Block-content description">
               <div class="Block-row row-between">
                 <h3>masked text field</h3>
                 <p>default</p>
@@ -50,7 +50,7 @@
                 <input type="text" placeholder="ДД.ММ.ГГГГ">
               </section>
             </div>
-            <div class="Block-content decription">
+            <div class="Block-content description">
               <div class="Block-row row-between">
                 <div class="Block-column">
                   <h3>date dropdown</h3>
@@ -83,7 +83,7 @@
             </div>
           </div>
           <!-- Second column -->
-          <div class="Block-column second-column">
+          <div class="Block-column second-column mini">
             <h3>Checkbox Buttons</h3>
             <section class="Block-row checkbox_buttons">
               <label class="Block-CheckboxButton">
@@ -148,13 +148,13 @@
                 <section class="Block-LikeButton">
                   <label class="like">
                     <input type="checkbox">
-                    <span class="like_button"><p>2</p></span>
+                    <span class="like-button"><p>2</p></span>
                   </label>
                 </section>
                 <section class="Block-LikeButton">
                   <label class="like">
                     <input type="checkbox">
-                    <span class="like_button"><p>12</p></span>
+                    <span class="like-button"><p>12</p></span>
                   </label>
                 </section>
               </div>
@@ -181,63 +181,197 @@
           </div>
           <!-- Third column -->
           <div class="Block-column third-column">
-            <section>
-              <input type="range" id="volume" name="volume" min="0" max="11">
-            </section>
+            <div class="Block-content mini">
+              <div class="Block-row row-between description">
+                <h3>range slider</h3>
+                <p>5 000₽ - 10 000₽</p>
+              </div>
+              <section class="Block-RangeSlider">
+                <label class="RangeSlider">
+                  <input type="text">
+                  <span class="range-slider">
+                    <span class="slider-line"></span>
+                    <span class="slider-circle right"></span>
+                    <span class="slider-circle left"></span>
+                  </span>
+                </label>
+              </section>
+            </div>
+            <div class="Block-content description">
+              <h3>Buttons</h3>
+              <div class="Block-column colunm-between buttons-size">
+                <section class="Block-row row-between">
+                  <button class="classic-MiniButton" type="button" name="button">
+                    <h3>click me</h3>
+                  </button>
+                  <button class="classic-MiniButton-active" type="button" name="button">
+                    <h3>click me</h3>
+                  </button>
+                </section>
+                <section class="Block-row row-between">
+                  <button class="transparent-button" type="button" name="button">
+                    <div class="Block-transparent-button">
+                      <h3>click me</h3>
+                    </div>
+                  </button>
+                  <button class="transparent-button-active" type="button" name="button">
+                    <div class="Block-transparent-button">
+                      <h3>click me</h3>
+                    </div>
+                  </button>
+                </section>
+                <section class="Block-row">
+                  <button class="calendar-button-sumbit" type="button" name="button">
+                    <h3>click me</h3>
+                  </button>
+                  <button class="calendar-button-clear" type="button" name="button">
+                    <h3>click me</h3>
+                  </button>
+                </section>
+              </div>
+              <section>
+                <button class="classic-button" type="button" name="button">
+                  <div class="clear-block"></div>
+                  <h3>Перейти к оплате</h3>
+                  <img src="img/arrow_forward_white.png">
+                </button>
+              </section>
+            </div>
+            <div class="Block-content description">
+              <section class="Block-pagination">
+                <h3>pagination</h3>
+                <section class="Block-row">
+                  <button class="pagination-buttons selected" type="button" name="button">1</button>
+                  <button class="pagination-buttons" type="button" name="button">2</button>
+                  <button class="pagination-buttons"type="button" name="button">3</button>
+                  <p class="dots">...</p>
+                  <button class="pagination-buttons" type="button" name="button">15</button>
+                  <button class="pagination-buttons arrow" type="button" name="button">
+                  <img src="img/arrow_forward_white.png"></button>
+                </section>
+                <div class="clear">
+                  <p>1 – 12 из 100+ вариантов аренды</p>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
 
         <!-- Second row -->
         <div class="Block-row second-row">
           <!-- First column -->
-          <div class="Block-column first-column">
-            <div class="Block-content decription">
+          <div class="Block-column first-column description">
+            <div class="Block-content mini">
               <div class="Block-row row-between">
                 <h3>dropdown</h3>
                 <p>default</p>
               </div>
-              <section>
+              <section class="Block-dropdown-default">
                 <select>
                   <option><p>2 спальни, 2 кровати...</p></option>
                 </select>
               </section>
             </div>
-            <div class="Block-textfield-little">
+            <div class="Block-content mini">
               <div class="Block-row row-between">
                 <h3>dropdown</h3>
-                <p>default</p>
+                <p>expanded</p>
               </div>
               <section class="Block-dropdown-default-open">
                 <div class="Block-row">
-                  <input class="clear-input" type="text" value="2 спальни, 2 кровати...">
+                  <input class="clear-dropdown" type="text" value="2 спальни, 2 кровати...">
                   <button class="button-more" type="button" name="button"></button>
                 </div>
                 <div class="Block-column">
-                  <section class="Block-SectionFirst">
+                  <section class="Block-Section">
                     <div class="Block-row row-between">
                       <h3>спальни</h3>
                       <section class="Block-dropdown-select">
                         <div class="Block-row row-between">
                           <button class="button-round" type="button" name="button"><p>-</p></button>
-                          <h3>2</h3>
+                          <p>2</p>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="Block-row row-between">
+                      <h3>кровати</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round" type="button" name="button"><p>-</p></button>
+                          <p>2</p>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="Block-row row-between">
+                      <h3>ванные комнаты</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round transparent25 " type="button" name="button"><p>-</p></button>
+                          <p>0</p>
                           <button class="button-round" type="button" name="button"><p>+</p></button>
                         </div>
                       </section>
                     </div>
                   </section>
-                  <div class="Block-row row-between">
-                    <h3>кровати</h3>
-                  </div>
-                  <div class="Block-row row-between">
-                    <h3>ванные комнаты</h3>
-                  </div>
                 </div>
               </section>
             </div>
           </div>
           <!-- Second column -->
-          <div class="Block-column second-column">
-
+          <div class="Block-column second-column description">
+            <div class="Block-content">
+              <div class="Block-row row-between">
+                <h3>dropdown</h3>
+                <p>expanded</p>
+              </div>
+              <section class="Block-dropdown-default-open">
+                <div class="Block-row">
+                  <input class="clear-dropdown" type="text" value="Сколько гостей">
+                  <button class="button-more" type="button" name="button"></button>
+                </div>
+                <div class="Block-column">
+                  <section class="Block-Section">
+                    <div class="Block-row row-between">
+                      <h3>взрослые</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round transparent25 " type="button" name="button"><p>-</p></button>
+                          <p>0</p>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="Block-row row-between">
+                      <h3>дети</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round transparent25 " type="button" name="button"><p>-</p></button>
+                          <p>0</p>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                    <div class="Block-row row-between">
+                      <h3>младенцы</h3>
+                      <section class="Block-dropdown-select">
+                        <div class="Block-row row-between">
+                          <button class="button-round transparent25 " type="button" name="button"><p>-</p></button>
+                          <p>0</p>
+                          <button class="button-round" type="button" name="button"><p>+</p></button>
+                        </div>
+                      </section>
+                    </div>
+                    <section class="Block-row">
+                      <button class="calendar-button-sumbit" type="button" name="button">
+                        <h3>click me</h3>
+                      </button>
+                    </section>
+                  </section>
+                </div>
+              </section>
+            </div>
           </div>
           <!-- Third column -->
           <div class="Block-column third-column">

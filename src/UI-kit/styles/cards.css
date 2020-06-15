@@ -358,58 +358,11 @@ form h3 {
 	height: 25px;
 }
 
-.calendar-button-sumbit{
-	outline: none;
-	text-decoration: none;
-}
-
-.calendar-button-sumbit h3 {
-	width: 70px;
-	color: #BC9CFF;
-}
-
-.calendar-button-clear {
-	outline: none;
-	text-decoration: none;
-}
-
-.calendar-button-clear h3 {
-	color: rgba(31, 32, 65, 0.5);
-}
-
 .Block-authorization {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-left: 30px;
-}
-
-.Block-transparent-button {
-	width: 96px;
-	height: 40px;
-	border-radius: 22px;
-	background-color: white;
-}
-
-.transparent-button {
-	width: 100px;
-	height: 44px;
-	padding: 2px;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-	border-radius: 22px;
-	outline: none;
-	text-decoration: none;
-	border: 0;
-	margin-right: 30px;
-}
-
-.transparent-button h3 {
-	color: #BC9CFF;
-	padding: 12px 0 0 20px;
-}
-
-.transparent-button:active {
-	opacity: 0.5;
 }
 
 .black-paragraph {
