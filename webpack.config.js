@@ -1,34 +1,63 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const merge = require('webpack-merge');
+const pug = require('./webpack/pug');
+const devserver = require('./webpack/devserver');
+const sass = require('./webpack/sass');
+const css = require('./webpack/css');
+const extractCSS = require('./webpack/css.extract');
+const images = require('./webpack/images');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
   build: path.join(__dirname, 'build')
 };
 
-module.exports = {
-  entry: PATHS.src + '/index.js',
-  output: {
-    path: PATHS.build,
-    filename: '[name].js'
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: PATHS.src + '/index.pug',
-    })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.pug$/,
-        loader: 'pug-loader',
-        options: {
-          pretty: true
-        }
-      }
+const common = merge([
+  {
+    entry: {
+      'index': PATHS.src + '/index.js'
+    },
+    output: {
+      path: PATHS.build,
+      filename: './js/[name].js'
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        chunks: ['index'],
+        template: PATHS.src + '/index.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'blog.html',
+        chunks: ['blog', 'common'],
+        template: PATHS.src + '/html/landing.pug'
+      }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      })
     ]
   },
-  devServer: {
-    stats: 'errors-only'
+  pug(),
+  images()
+]);
+
+module.exports = function(env) {
+  if (env === 'production') {
+    return merge([
+      common,
+      extractCSS(),
+      uglifyJS()
+    ]);
   }
-}
+  if (env === 'development') {
+    return merge([
+      common,
+      devserver(),
+      sass(),
+      css()
+    ]);
+  }
+};

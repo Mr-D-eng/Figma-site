@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production",
     "serv": "static build"
   },
   "repository": "git+https://github.com/Mr-D-eng/Figma-site.git",
@@ -19,12 +19,23 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.6.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
     "node-static": "^0.7.11",
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
   }
 }
