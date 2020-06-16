@@ -1,2 +1,4 @@
-import createMenu from './js/main';
-console.log("Index here!")
+import './js/main';
+import './index.scss';
+import 'normalize.css';
+console.log("Index here!");
