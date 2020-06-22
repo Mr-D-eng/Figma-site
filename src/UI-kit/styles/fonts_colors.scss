@@ -3,15 +3,15 @@
   margin: 140px 0 0 150px;
 }
 
-.Block-description {
+.block__description {
   margin: 10px 15px 40px 15px;
 }
 
-.Block-description-text {
+.description-text {
   margin: 0 15px 40px 15px;
 }
 
-.Block-h1 {
+.h1 {
   font-size: 24px;
   line-height: 29px;
   padding: 0 15px 15px 15px;
@@ -20,7 +20,7 @@
   text-align: right;
 }
 
-.Block-h2 {
+.h2 {
   padding: 0 15px 15px 17px;
   margin: 10px 0 35px 2px;
   font-size: 19px;
@@ -30,7 +30,7 @@
   text-align: right;
 }
 
-.Block-h3 {
+.h3 {
   padding: 0 15px 15px 15px;
   margin: 10px 0 35px 10px;
   font-size: 12px;
@@ -40,7 +40,7 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
-.Block-body {
+.block__body {
   padding: 0 15px 15px 5px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -48,26 +48,26 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
-.Block-colors {
+.colors {
   margin-right: 427px;
 }
 
-.Block-color-name {
+.color-name {
   display: flex;
   flex-direction: row;
 }
 
-.Block-text {
+.text {
   font-size: 18px;
   line-height: 29px;
   margin: 20px 0 10px 20px;
 }
 
-.Block-text p {
+.text p {
   margin-top: 5px;
 }
 
-.Block-color {
+.color {
   width: 70px;
   height: 70px;
   border-radius: 6px;
@@ -94,14 +94,14 @@
   background: rgba(31, 32, 65, 0.05);
 }
 
-.Block-purple {
+.purple {
   background: #BC9CFF;
 }
 
-.Block-green {
+.green {
   background: #6FCF97;
 }
 
-.Block-textfield {
+.textfield {
 	width: 320px;
 }

@@ -7,11 +7,6 @@ container {
 	border-radius: 4px;
 }
 
-.form0 {
-	width: 380px;
-	height: 374px;
-}
-
 .form1 {
 	width: 380px;
 	height: 511px;
@@ -41,84 +36,84 @@ form h3 {
 	margin: 0 30px 5px 0;
 }
 
-.Block-header {
+.header {
 	display: flex;
 	flex-direction: row;
 }
 
-.Block-header-line {
+.header-line {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 20px;
 }
 
-.Block-header h1 {
+.header h1 {
 	margin: 40px 0 20px 30px;
 }
 
-.Block-header-calendar {
+.header-calendar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.Block-header-calendar img{
+.header-calendar img{
 	margin: 22px 22px 0 22px;
 }
 
-.Block-header-calendar h2{
+.header-calendar h2{
 	margin-top: 20px ;
 }
 
-.Block-header h3 {
+.header h3 {
 	margin: 52px 100px 20px 5px;
 	color: #BC9CFF;
 }
 
-.Block-header p {
+.header p {
 	margin: 50px 10px 0 0;
 }
 
-.Block-header-line h2 {
+.header-line h2 {
 	margin: 0 0 0 20px;
 }
 
-.Block-header-line h3 {
+.header-line h3 {
 	margin: 7px 0 0 5px;
 	color: #BC9CFF;
 }
 
-.Block-header-line p {
+.header-line p {
 	margin: 2px 30px 0 35px;
 }
 
 
-.Block-select-row {
+.select-row {
 	margin: 0 20px 20px 20px;
 	display: flex;
 	flex-direction: row;
 }
 
-.Block-select-column-background {
+.select-column-background {
 	display: flex;
 	flex-direction: column;
 	height: 150px;
 }
 
-.Block-select-row-buttons {
+.select-row-buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 29px;
 }
 
-.Block-select-row-circles {
+.select-row-circles {
 	display: flex;
 	flex-direction: row;
 }
 
-.Block-select-column-circles {
+.select-column-circles {
 	margin-top: 130px;
 	height: 150px;
 }
@@ -139,7 +134,7 @@ form h3 {
 		margin: 15px 16px;
 }
 
-.Block-select-circles {
+.select-circles {
 	width: 255px;
 	height: 150px;
 	display: flex;
@@ -161,14 +156,14 @@ form h3 {
 	background: #FFFFFF;
 }
 
-.Block-select-date {
+.select-date {
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex-direction: column;
 	color: rgba(31, 32, 65, 0.75);
 }
 
-.Block-select-calendar {
+.select-calendar {
 	margin: 27px 0 20px 23px;
 	color: rgba(31, 32, 65, 0.5);
 	border-collapse: collapse;
@@ -176,73 +171,73 @@ form h3 {
 	border: 0;
 }
 
-.Block-select-calendar th{
+.select-calendar th{
 	width: 40px;
 	height: 40px;
 	padding: 0;
 	margin: 0;
 }
 
-.Block-select-calendar-header {
+.select-calendar-header {
 	color: #BC9CFF;
 }
 
-.Block-select-calendar-deactivated {
+.select-calendar-deactivated {
 	color: rgba(31, 32, 65, 0.25);
 }
 
-.Block-select-calendar-one {
+.select-calendar-one {
 	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 	border-radius: 22px;
 	color: #FFFFFF;
 }
 
-.Block-select-calendar-first {
+.select-calendar-first {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
 	color: #FFFFFF;
 }
 
-.Block-select-calendar-second {
+.select-calendar-second {
 	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	border-radius: 22px;
 	color: #FFFFFF;
 }
 
-.Block-select-calendar-between {
+.select-calendar-between {
 	background-image: url(../img/rectangle.png);
 }
 
-.Block-select-calendar-between p {
+.select-calendar-between p {
 	color: rgba(31, 32, 65, 0.5);
 }
 
-.Block-select-column {
+.select-column {
 	margin-left: 30px;
 }
 
-.Block-select-text input {
+.select-text input {
 	margin-bottom: 10px;
 }
 
-.Block-select-option {
+.select-option {
 	width: 320px;
 	height: 44px;
 	margin-bottom: 20px;
 	padding-left: 15px;
 }
 
-.Block-sex {
+.sex {
 	display: flex;
 	flex-direction: row;
 	margin: 0 0 20px 30px;
 }
 
-.Block-birthday {
+.birthday {
 	margin: 0 0 20px 30px;
 }
 
-.Block-radio-switch {
+.radio-switch {
 	position: relative;
   display: inline-block;
   width: 20px;
@@ -250,11 +245,11 @@ form h3 {
 	margin-right: 10px
 }
 
-.Block-sex p {
+.sex p {
 	margin-right: 20px;
 }
 
-.Block-information {
+.information {
 	width: 320px;
 	margin: 0 0 20px 30px;
 	display: flex;
@@ -262,18 +257,18 @@ form h3 {
 	justify-content: space-between;
 }
 
-.Block-information-1 {
+.information-1 {
 	display: flex;
 	flex-direction: column;
 }
 
-.Block-information-2 {
+.information-2 {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
 }
 
-.Block-information-button {
+.information-button {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -292,11 +287,11 @@ form h3 {
 	outline: none;
 }
 
-.Block-information-2 p {
+.information-2 p {
 	margin-bottom: 10px;
 }
 
-.Block-result {
+.result {
 	width: 320px;
 	margin: 0 0 20px 30px;
 	display: flex;
@@ -304,15 +299,15 @@ form h3 {
 	justify-content: space-between;
 }
 
-.Block-sumbit {
+.sumbit {
 	margin: 13px 30px 30px 30px;
 }
 
-.Block-sumbit-authorization {
+.sumbit-authorization {
 	margin: 10px 30px 30px 30px;
 }
 
-.Block-sumbit-calendar {
+.sumbit-calendar {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -358,7 +353,7 @@ form h3 {
 	height: 25px;
 }
 
-.Block-authorization {
+.authorization {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -377,10 +372,10 @@ form h3 {
 	height: 1px;
 }
 
-.Block-stars {
+.stars {
 	margin: 7px 0 0 20px;
 }
 
-.Block-feedback {
+.feedback {
 	margin: 8px 31px 0 0;
 }

@@ -1,0 +1,83 @@
+div.column.second-column
+  div.content.mini
+    h3.description Checkbox Buttons
+    section.row.checkbox_buttons
+      include 1_2/checkbox/checkbox-button.pug
+      p Можно курить
+
+    section.row
+      include 1_2/checkbox/checkbox-button.pug
+      p Можно с питомцами
+
+    section.row
+      include 1_2/checkbox/checkbox-button.pug
+      p Можно пригласить гостей <br>  (до 10 человек)
+
+    div.RadioButtons
+      h3 Radio Buttons
+      div.row
+        section.row.radio_buttons
+          include 1_2/radio/radio-button.pug
+          p Мужчина
+
+        section.row
+          label.RadioButton
+            input(type='checkbox')
+            span.radio-switcher
+          p Женщина
+
+    div.Toggle
+      h3 Toggle
+      section.ToggleButton
+        label.switch
+          input(type='checkbox')
+          span.slider
+        p Получать спецпредложения
+
+      section.ToggleButton
+        label.switch
+          input(type='checkbox')
+          span.slider
+        p Получать спецпредложения
+
+    div.LikeButton
+      h3 Like Button
+      div.row
+        section.LikeButton
+          label.like
+            input(type='checkbox')
+            span.like-button
+              p 2
+
+        section.LikeButton
+          label.like
+            input(type='checkbox')
+            span.like-button
+              p 12
+
+    div.RateButton
+      h3 Like Button
+      div.row.row-between
+        section.stars
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star_border.png'))
+
+        section.stars
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))
+          button(class='star-button' type='button' name='button')
+            img(src=require('../img/star.png'))

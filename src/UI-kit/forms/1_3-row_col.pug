@@ -1,0 +1,62 @@
+div.column.third-column
+  div.content.mini
+    div.row.row-between.description
+      h3 range slider
+      p 5 000₽ - 10 000₽
+
+    section.RangeSlider
+      label.RangeSlider
+        input(type='text')
+        span.range-slider
+          span.slider-line
+          span.slider-circle.right
+          span.slider-circle.left
+
+  div.content.description
+    h3 Buttons
+    div.column.colunm-between.buttons-size
+      section.row.row-between
+        button.classic-MiniButton
+          h3 click me
+        button.classic-MiniButton-active
+          h3 click me
+
+      section.row.row-between
+        button.block__transparent-button
+          div.transparent-button
+            h3 click me
+        button.block__transparent-button-active
+          div.transparent-button
+            h3 click me
+
+      section.row
+        button.calendar-button-sumbit
+          h3 click me
+
+        button.calendar-button-clear
+          h3 click me
+
+    section
+      button.classic-button
+        div.clear-block
+        h3 Перейти к оплате
+        img(src=require('../img/arrow_forward_white.png'))
+
+  div.content.description
+    section.pagination
+      h3 pagination
+      section.row
+        button(class='pagination-buttons selected' type='button' name='button')
+          p 1
+        button(class='pagination-buttons' type='button' name='button')
+          p 2
+        button(class='pagination-buttons' type='button' name='button')
+          p 3
+        p.dots
+          | ...
+        button(class='pagination-buttons' type='button' name='button')
+          p 15
+        button(class='pagination-buttons arrow' type='button' name='button')
+          img(src=require('../img/arrow_forward_white.png'))
+      div.clear
+        p 1 – 12 из 100+ вариантов аренды

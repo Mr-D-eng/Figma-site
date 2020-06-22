@@ -1,184 +1,9 @@
-@font-face {
-	font-family: 'Quicksand';
-	src: url('fonts/Quicksand-Regular.eot');
-	src: local('☺'), url('../fonts/Quicksand-Regular.woff') format('woff'), url('../fonts/Quicksand-Regular.ttf') format('truetype'), url('../fonts/Quicksand-Regular.svg') format('svg');
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
-}
-
-body {
-  font-family: 'Montserrat';
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-body p {
-  margin: 0;
-}
-
-h1 {
-  font-family: 'Quicksand';
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1F2041;
-	margin: 0;
-}
-
-h2 {
-  font-family: 'Quicksand';
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1F2041;
-  margin: 0;
-}
-
-h3 {
-  font-family: 'Montserrat';
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-	margin: 0;
-}
-
-select {
-	width: 100%;
-	height: 44px;
-	background: #FFFFFF;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	box-sizing: border-box;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-	padding-left: 15px;
-	-webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-	background: url(../img/expand_more_grey.png) no-repeat right;
-	background-position-x: calc(100% - 15px);
-	outline: none;
-}
-
-input {
-	width: 100%;
-	height: 44px;
-	background: #FFFFFF;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	box-sizing: border-box;
-	border-radius: 4px;
-	padding-left: 15px;
-	outline: none;
-}
-
-.Dark-Shade-100 {
-	color: #1F2041;
-}
-
-.Dark-Shade-75 {
-	color: rgba(31, 32, 65, 0.75);
-}
-
-.Dark-Shade-50 {
-	color: rgba(31, 32, 65, 0.5);
-}
-
-.Dark-Shade-25 {
-	color: rgba(31, 32, 65, 0.25);
-}
-
-.Dark-Shade-5 {
-	color: rgba(31, 32, 65, 0.05);
-}
-
-.Block-purple {
-	color: #BC9CFF;
-}
-
-.Block-green {
-	color: #6FCF97;
-}
-
-.Block-column {
-	display: flex;
-	flex-direction: column;
-}
-
-.Block-row {
-	display: flex;
-	flex-direction: row;
-}
-
-.Block-DateDropdown {
-	width: 150px;
-}
-
-.Block-dropdown-select {
+.dropdown-select {
 	width: 92px;
 	margin: 6px 7px 0 0;
 }
 
-.Block-RadioButton {
-	position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-	margin-right: 10px;
-}
-
-.Block-RadioButton input {display:none;}
-
-.radio-switcher {
-	position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: .4s;
-	background: white;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	box-sizing: border-box;
-	border-radius: 10px;
-}
-
-.radio-switcher:before {
-	position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 3px;
-  bottom: 3px;
-	background: white;
-	border-radius: 10px;
-}
-
-input:checked + .radio-switcher:before {
-	box-sizing: border-box;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-	border-radius: 10px;
-}
-
-input:checked + .radio-switcher {
-	border: 1px solid #BC9CFF;
-}
-
-.Block-ToggleButton {
+.ToggleButton {
 	display: flex;
 	flex-direction: row;
 }
@@ -238,48 +63,7 @@ input:checked + .slider:before {
 	border-radius: 10px;
 }
 
-.Block-CheckboxButton {
-	position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-	margin: 0 10px 10px 0;
-}
 
-.Block-CheckboxButton input {display:none;}
-
-.CheckboxButton {
-	position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: .4s;
-	background: white;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	box-sizing: border-box;
-	border-radius: 4px;
-}
-
-.CheckboxButton:before {
-	position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 3px;
-  bottom: 3px;
-	background: white;
-}
-
-input:checked + .CheckboxButton:before {
-	box-sizing: border-box;
-	background: url(../img/vector.png) no-repeat center;
-}
-
-input:checked + .CheckboxButton {
-	border: 1px solid #BC9CFF;
-}
 
 .like {
 	position: relative;
@@ -289,7 +73,7 @@ input:checked + .CheckboxButton {
 	margin: 0 10px 10px 0;
 }
 
-.Block-LikeButton input {display:none;}
+.LikeButton input {display:none;}
 
 .like-button {
 	position: absolute;
@@ -308,7 +92,7 @@ input:checked + .CheckboxButton {
 .like-button p {
 	color: rgba(31, 32, 65, 0.25);
 	text-align: right;
-	margin: 4px 10px 0 0;
+	margin: 2px 10px 0 0;
 	font-size: 10px;
 	line-height: 12px;
 }
@@ -382,7 +166,7 @@ input:checked + .like-button p {
 	right: 92px;
 }
 
-.Block-stars {
+.stars {
 	padding: 0;
 }
 
@@ -458,14 +242,14 @@ input:checked + .like-button p {
 	padding: 4px 5px;
 }
 
-.Block-transparent-button {
+.transparent-button {
 	width: 96px;
 	height: 40px;
 	border-radius: 22px;
 	background-color: white;
 }
 
-.transparent-button {
+.block__transparent-button {
 	width: 100px;
 	height: 44px;
 	padding: 2px;
@@ -521,37 +305,8 @@ input:checked + .like-button p {
 	color: rgba(31, 32, 65, 0.25);
 }
 
-.row-between {
-	display: flex;
-  justify-content: space-between;
-}
-
-.column-between {
-	display: flex;
-	align-content: space-between;
-}
-
-.clear-input {
-	border-bottom-right-radius: 0px;
-	border-top-right-radius: 0px;
-	border-right: none;
-}
-
 .clear-dropdown {
 	border: none;
-}
-
-.button-arrow {
-	width: 44px;
-	height: 44px;
-	background: white;
-	border: 1px solid rgba(31, 32, 65, 0.25);
-	border-left: none;
-	border-bottom-right-radius: 4px;
-	border-top-right-radius: 4px;
-	outline: none;
-	background: url(../img/arrow_forward_blue.png) no-repeat right;
-	background-position-x: calc(100% - 11px);
 }
 
 .button-more {
@@ -572,10 +327,6 @@ input:checked + .like-button p {
 	border-radius: 22px;
 	background: white;
 	color: rgba(31, 32, 65, 0.5);
-}
-
-.checkbox_buttons {
-	margin-top: 16px;
 }
 
 .radio_buttons {
@@ -613,7 +364,7 @@ input:checked + .like-button p {
 	border-radius: 22px;
 }
 
-.Block-dropdown-default-open {
+.dropdown-default-open {
 	border: 1px solid rgba(31, 32, 65, 0.5);
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
@@ -621,19 +372,19 @@ input:checked + .like-button p {
 	border-bottom-right-radius: 4px;
 }
 
-.Block-Section {
+.Section {
 	height: 100%;
 	padding-bottom: 7px;
 	box-sizing: border-box;
 	border-top: 1px solid rgba(31, 32, 65, 0.5);
 }
 
-.Block-Section h3 {
+.Section h3 {
 	display: flex;
 	margin: 13px 0 0 15px;
 }
 
-.Block-Section p {
+.Section p {
 	display: flex;
 	align-items: center;
 }

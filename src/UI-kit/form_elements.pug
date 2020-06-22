@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    style
+      include styles/form_elements.scss
+    meta(charset=utf-8)
+    title
+  body
+    container
+      form.Form_Elements
+
+        // First row
+        div.row.first-row
+
+          // First column
+          include forms/1_1-row_col.pug
+
+          // Second column
+          include forms/1_2-row_col.pug
+
+          // Third columns
+          include forms/1_3-row_col.pug
+
+        // Second row
+        div.row.second-row
+          // First column
+          include forms/2_1-row_col.pug
+
+          // Second column
+          include forms/2_2-row_col.pug
+
+          // Third column
+          include forms/2_3-row_col.pug
+
+        // Third row
+        div.row.third-row
+
+          // First column
+          include forms/3_1-row_col.pug
+
+          // Second column
+          include forms/3_2-3-row_col.pug

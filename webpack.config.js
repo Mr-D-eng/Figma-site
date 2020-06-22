@@ -27,12 +27,7 @@ const common = merge([
       new HtmlWebpackPlugin({
         filename: 'index.html',
         chunks: ['index'],
-        template: PATHS.src + '/index.pug'
-      }),
-      new HtmlWebpackPlugin({
-        filename: 'blog.html',
-        chunks: ['blog', 'common'],
-        template: PATHS.src + '/html/landing.pug'
+        template: PATHS.src + '/UI-kit/form_elements.pug'
       }),
       new webpack.ProvidePlugin({
         $: 'jquery',
@@ -48,8 +43,8 @@ module.exports = function(env) {
   if (env === 'production') {
     return merge([
       common,
-      extractCSS(),
-      uglifyJS()
+      sass(),
+      css()
     ]);
   }
   if (env === 'development') {

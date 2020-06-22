@@ -1,0 +1,52 @@
+div.column.first-column.description
+  div.content.mini
+    div.row.row-between
+      h3 dropdown
+      p default
+
+    section.dropdown-default
+      select
+        option
+          p 2 спальни, 2 кровати...
+
+  div.content.mini
+    div.row.row-between
+      h3 dropdown
+      p expanded
+
+    section.dropdown-default-open
+      div.row
+        input(class='clear-dropdown' type='text' value='2 спальни, 2 кровати...')
+        button.button-more
+
+      div.column
+        section.Section
+          div.row.row-between
+            h3 спальни
+            section.dropdown-select
+              div.row.row-between
+                button.button-round
+                  p -
+                p 2
+                button.button-round
+                  p +
+
+          div.row.row-between
+            h3 кровати
+            section.dropdown-select
+              div.row.row-between
+                button.button-round
+                  p -
+                p 2
+                button.button-round
+                  p +
+
+          div.row.row-between
+            h3 ванные комнаты
+            section.dropdown-select
+              div.row.row-between
+                button.button-round.transparent25
+                  p -
+                p 0
+                button.button-round
+                  p +
