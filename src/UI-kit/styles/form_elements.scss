@@ -1,3 +1,7 @@
+.Form_Elements {
+	margin: 145px 0 0 135px;
+}
+
 .description p {
 	font-size: 12px;
 	line-height: 15px;
@@ -22,7 +26,7 @@
 
 .third-column {
 	width: 320px;
-	margin-left: 133px;
+	margin-left: 150px;
 }
 
 .big-column {
@@ -56,7 +60,7 @@
 }
 
 .dropdown-default {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .MaskedTextField-default {
@@ -69,6 +73,11 @@
 
 .FilterDateDropdown {
 	margin-bottom: 40px;
+}
+.radio_buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 220px;
 }
 
 .RadioButtons {
@@ -96,7 +105,7 @@
 }
 
 .RangeSlider {
-	margin-top: 16px;
+	margin: 16px 0 47px 0;
 	height: 50px;
 }
 
@@ -124,7 +133,7 @@
 }
 
 .classic-MiniButton {
-	margin: 15px 0 15px 0;
+	margin: 11px 0 15px 0;
 }
 
 .classic-MiniButton-active {
@@ -139,7 +148,7 @@
 	border-radius: 22px;
 	outline: none;
 	border: 0px;
-	margin: 15px 0 15px 0;
+	margin: 11px 0 15px 0;
 }
 
 .classic-MiniButton-active h3 {
@@ -147,18 +156,22 @@
 	color: #FFFFFF;
 }
 
-.calendar-button-sumbit{
+.easy-button-sumbit{
 	margin: 15px 0 15px 0;
 }
 
-.calendar-button-clear {
+.easy-button-clear {
 	margin: 15px 0 15px 0;
 }
 
 .classic-button {
-	margin: 15px 0 15px 0;
+	margin: 10px 0 20px 0;
 }
 
 .pagination {
 	margin-top: 20px;
+}
+
+.pagination h3 {
+	margin-bottom: 18px;
 }

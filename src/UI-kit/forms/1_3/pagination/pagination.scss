@@ -1,0 +1,30 @@
+.pagination-buttons {
+	width: 40px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	background: white;
+}
+
+.dots {
+	display: flex;
+	align-items: center;
+	width: 25px;
+	height: 40px;
+	padding-left: 15px;
+}
+
+.selected {
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	color: white;
+	font-size: 12px;
+	line-height: 15px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.arrow {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border-radius: 22px;
+}

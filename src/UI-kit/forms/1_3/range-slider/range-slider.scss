@@ -1,0 +1,44 @@
+.RangeSlider input {display:none;}
+
+.RangeSlider {
+	width: 266px;
+	height: 6px;
+}
+
+.range-slider {
+	position: absolute;
+	width: 266px;
+	height: 6px;
+	background: #FFFFFF;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.slider-circle {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+	bottom: -6px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	border: 2px solid #FFFFFF;
+	border-radius: 10px;
+}
+
+.slider-line {
+	position: absolute;
+	left: 80px;
+	width: 88px;
+	height: 6px;
+	bottom: -1px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.right {
+	left: 77px;
+}
+
+.left {
+	right: 92px;
+}

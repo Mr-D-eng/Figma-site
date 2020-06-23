@@ -1,0 +1,26 @@
+.transparent-button {
+	width: 96px;
+	height: 40px;
+	border-radius: 22px;
+	background-color: white;
+}
+
+.block__transparent-button {
+	width: 100px;
+	height: 44px;
+	padding: 2px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	outline: none;
+	text-decoration: none;
+	border: 0;
+}
+
+.transparent-button h3 {
+	color: #BC9CFF;
+	padding-top: 12px;
+}
+
+.block__transparent-button:active {
+	opacity: 0.5;
+}

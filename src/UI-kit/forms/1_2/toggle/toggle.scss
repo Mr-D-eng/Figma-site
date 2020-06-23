@@ -1,0 +1,59 @@
+.ToggleButton {
+	display: flex;
+	flex-direction: row;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+	box-sizing: border-box;
+}
+
+.switch:after {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+	border-radius: 10px;
+	border: 1px solid #BC9CFF;
+	box-sizing: border-box;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+	background: rgba(31, 32, 65, 0.25);
+	border-radius: 10px;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 10px;
+}
