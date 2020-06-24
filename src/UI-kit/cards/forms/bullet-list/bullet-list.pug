@@ -1,0 +1,12 @@
+head
+  style
+    include bullet-list.scss
+mixin bullet(text)
+  .row
+    .bullet__circle
+    p= text
+.content.mini
+  section.bullet-list
+    +bullet('Нельзя с питомцами.')
+    +bullet('Без вечеринок и мероприятий.')
+    +bullet('Время прибытия — после 13:30, а въезд до 12:00')

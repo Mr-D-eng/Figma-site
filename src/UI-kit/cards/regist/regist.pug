@@ -1,0 +1,39 @@
+doctype html
+head
+  style
+    include regist.scss
+  meta(charset='utf-8')
+container
+  form.form__regist
+    .regist
+      .regist__header
+        h1 Регистрация аккаунта
+        
+      .regist__textfields
+        include ../forms/textfields/textfield-default.pug
+        +textfield('Имя')
+        +textfield('Фамилия')
+        
+      .regist__sex
+        include ../forms/radio/radio-button.pug
+        
+      .regist__birthday
+        h3 Дата рождения
+        include ../forms/textfields/masked-textfield.pug
+        
+      h3 Данные для входа в сервис
+      .regist__textfields
+        +textfield('Email')
+        +textfield('Пароль')
+        
+      .regist__toggle
+        include ../forms/toggle/toggle-button.pug
+        
+      .regist__sumbit
+        include ../forms/buttons/classic-button/classic-button.pug
+        +classic('Перейти к оплате')
+        
+      .row-between.regist__authorization
+        p Уже есть аккаунт на Toxin
+        include ../forms/buttons/transparent-button/transparent-button.pug
+        +transparent('Войти')

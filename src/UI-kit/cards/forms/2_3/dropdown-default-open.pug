@@ -1,0 +1,49 @@
+head
+  style
+    include dropdown-default-open.scss
+section.dropdown-default-open
+  .row
+    input(
+      class='clear-dropdown'
+      type='text'
+      value='3 гостя'
+    )
+    include ../buttons/button-more/button-more.pug
+
+  .column
+    section.Section
+      .row.row-between
+        h3 взрослые
+        section.dropdown-select
+          .row.row-between
+            button.button-round
+              p -
+            p <b>2</b>
+            button.button-round
+              p +
+
+      .row.row-between
+        h3 дети
+        section.dropdown-select
+          .row.row-between
+            button.button-round
+              p -
+            p <b>1</b>
+            button.button-round
+              p +
+
+      .row.row-between
+        h3 младенцы
+        section.dropdown-select
+          .row.row-between
+            button.button-round.transparent25
+              p -
+            p <b>0</b>
+            button.button-round
+              p +
+
+      section.row.row-between
+        include ../buttons/easy-button/easy-button.pug
+        +clear('очистить')
+        +sumbit('применить')
+        

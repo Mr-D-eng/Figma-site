@@ -8,6 +8,7 @@ const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
 const images = require('./webpack/images');
+const fonts = require('./webpack/fonts');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
@@ -17,7 +18,7 @@ const PATHS = {
 const common = merge([
   {
     entry: {
-      'index': PATHS.src + '/index.js'
+      'index': PATHS.src + '/js/index.js'
     },
     output: {
       path: PATHS.build,
@@ -27,7 +28,7 @@ const common = merge([
       new HtmlWebpackPlugin({
         filename: 'index.html',
         chunks: ['index'],
-        template: PATHS.src + '/UI-kit/form_elements.pug'
+        template: PATHS.src + '/UI-kit/cards.pug'
       }),
       new webpack.ProvidePlugin({
         $: 'jquery',
@@ -35,6 +36,7 @@ const common = merge([
       })
     ]
   },
+  fonts(),
   pug(),
   images()
 ]);

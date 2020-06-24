@@ -1,0 +1,16 @@
+head
+  style
+    include expandable-checkbox-list.scss
+.content.mini
+  .column.expandable-checkbox-open
+    section.row-between.expandable-checkbox
+      h3 expandable checkbox list
+      include ../buttons/button-more/button-more.pug
+    .Dark-Shade-50
+      include ../checkbox/checkbox-button.pug
+      +checkbox('Завтрак')
+      +checkbox('Письменный стол')
+      +checkbox('Стул для кормления')
+      +checkbox('Кроватка')
+      +checkbox('Телевизор')
+      +checkbox('Шампунь')

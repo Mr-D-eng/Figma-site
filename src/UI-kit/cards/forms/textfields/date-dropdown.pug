@@ -1,0 +1,16 @@
+head
+  style
+    include textfields.scss
+mixin datedropdown(coming, firstdate, leaving, seconddate)
+  .row.row-between
+    .column
+      h3= coming
+      select.DateDropdown
+        option
+          p= firstdate
+
+    .column
+      h3= leaving
+      select.DateDropdown
+        option
+          p= seconddate

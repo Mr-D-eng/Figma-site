@@ -1,0 +1,39 @@
+head
+  style
+    include dropdown-default-open.scss
+section.dropdown-default-open
+  .row
+    input(class='clear-dropdown' type='text' value='2 спальни, 2 кровати...')
+    include ../buttons/button-more/button-more.pug
+
+  .column
+    section.Section
+      .row.row-between
+        h3 спальни
+        section.dropdown-select
+          .row.row-between
+            button.button-round
+              p -
+            p 2
+            button.button-round
+              p +
+
+      .row.row-between
+        h3 кровати
+        section.dropdown-select
+          .row.row-between
+            button.button-round
+              p -
+            p 2
+            button.button-round
+              p +
+
+      .row.row-between
+        h3 ванные комнаты
+        section.dropdown-select
+          .row.row-between
+            button.button-round.transparent25
+              p -
+            p 0
+            button.button-round
+              p +

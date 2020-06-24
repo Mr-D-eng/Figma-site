@@ -1,0 +1,9 @@
+head
+  style
+    include checkbox.scss
+mixin checkbox(descr)
+  .row.checkbox__description
+    label.block__CheckboxButton
+      input(type='checkbox')
+      span.CheckboxButton
+    p= descr

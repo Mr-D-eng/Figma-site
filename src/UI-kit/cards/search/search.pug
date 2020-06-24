@@ -1,0 +1,17 @@
+head
+  style
+    include search.scss
+form
+  .form__search
+    .search
+      .search__header
+        h1 Найдем номера под <br> ваши желания
+      .search__datedropdown
+        include ../forms/textfields/date-dropdown.pug
+        +datedropdown('Прибытие', 'ДД.ММ.ГГГГ', 'Выезд', 'ДД.ММ.ГГГГ')
+      .search__dropdown-defaultc
+        h3 Гости
+        include ../forms/textfields/dropdown-defaultc.pug
+      .search__sumbit
+        include ../forms/buttons/classic-button/classic-button.pug
+        +classic('подобрать номер')

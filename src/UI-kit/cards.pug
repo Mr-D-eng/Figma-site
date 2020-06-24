@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    style
+      // include styles/cards.scss
+    meta(charset=utf-8)
+    title
+  body
+    container
+      form.Form_Elements
+        // First column
+        div.column.first-column
+          include ./cards/search/search.pug
+          include ./cards/regist/regist.pug
+          
+        // Second column
+        div.column.second-column
+          include ./cards/booking/booking.pug
+          
+        // Third columns
+        div.column.third-column

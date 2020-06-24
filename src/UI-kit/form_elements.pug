@@ -10,33 +10,181 @@ html
       form.Form_Elements
 
         // First row
-        div.row.first-row
+        .row.first-row
 
           // First column
-          include forms/1_1-row_col.pug
+          .column.first-column
+            .content.description
+              .row.row-between
+                h3 text field
+                p default
+              include cards/forms/textfields/textfield-default.pug
+              +textfield('Email')
+          
+            .content.description
+              .row.row-between
+                h3 text field
+                p Hover / Focus
+              include cards/forms/textfields/textfield-hover.pug
+          
+            .content.description
+              .row.row-between
+                h3 dropdown
+                p default
+              include cards/forms/textfields/dropdown-defaultc.pug
+          
+            .content.description
+              .row.row-between
+                h3 masked text field
+                p default
+              include cards/forms/textfields/masked-textfield.pug
+          
+            .content.description
+              include cards/forms/textfields/date-dropdown.pug
+              +datedropdown('datedropdown', 'ДД.ММ.ГГГГ', 'datedropdown', '19.08.2019')
+          
+            .content.mini
+              h3 filter date dropdown
+              include cards/forms/textfields/filterdate-dropdown.pug
+          
+            .content.mini
+              h3 subscription text field
+              include cards/forms/textfields/subscription-textfield.pug
 
           // Second column
-          include forms/1_2-row_col.pug
+          .column.second-column
+            .content.mini
+              h3.description Checkbox Buttons
+              section.row.checkbox_buttons
+                include cards/forms/checkbox/checkbox-button.pug
+                +checkbox('Можно курить')
+          
+              section.row
+                include cards/forms/checkbox/checkbox-button.pug
+                +checkbox('Можно с питомцами')
+          
+              section.row
+                include cards/forms/checkbox/checkbox-button.pug
+                +checkbox('Можно пригласить гостей (до 10 человек)')
+          
+              .RadioButtons
+                h3 Radio Buttons
+                include cards/forms/radio/radio-button.pug
+          
+          
+              .Toggle
+                h3 Toggle
+                include cards/forms/toggle/toggle-button.pug
+                include cards/forms/toggle/toggle-button.pug
+          
+              .LikeButton
+                h3 Like Button
+                .row
+                  include cards/forms/like/like-button.pug
+                  +like(2)
+                  +like(12)
+          
+              .RateButton
+                h3 Rate Button
+                .row.row-between
+                  include cards/forms/rating/stars-button.pug
+                  include cards/forms/rating/stars-button.pug
+
 
           // Third columns
-          include forms/1_3-row_col.pug
+          .column.third-column
+            .content.mini
+              .row.row-between.description
+                h3 range slider
+                p 5 000₽ - 10 000₽
+              include cards/forms/range-slider/range-slider.pug
+          
+            .content.description
+              h3 Buttons
+              .column.colunm-between.buttons-size
+                section.row.row-between
+                  include cards/forms/buttons/classic-MiniButton/classic-MiniButton.pug
+                  include cards/forms/buttons/classic-MiniButton/classic-MiniButton-active.pug
+          
+                section.row.row-between
+                  include cards/forms/buttons/transparent-button/transparent-button.pug
+                  include cards/forms/buttons/transparent-button/transparent-button-active.pug
+          
+          
+                section.row
+                  include cards/forms/buttons/easy-button/easy-button.pug
+                  +sumbit('click me')
+                  +clear('click me')
+          
+              section
+                include cards/forms/buttons/classic-button/classic-button.pug
+          
+            .content.description
+              section.pagination
+                h3 pagination
+                include cards/forms/pagination/pagination.pug
 
         // Second row
-        div.row.second-row
+        .row.second-row
+        
           // First column
-          include forms/2_1-row_col.pug
+          .column.first-column.description
+            .content.mini
+              .row.row-between
+                h3 dropdown
+                p default
+              include cards/forms/dropdown-default/dropdown-default.pug
+          
+            .content.mini
+              .row.row-between
+                h3 dropdown
+                p expanded
+              include cards/forms/2_1/dropdown-default-open.pug
+
 
           // Second column
-          include forms/2_2-row_col.pug
+          .column.second-column.description
+            .content
+              h3 dropdown
+              include cards/forms/2_2/dropdown-default-open.pug
 
           // Third column
-          include forms/2_3-row_col.pug
+          .column.third-column.description
+            .content
+              h3 dropdown
+              include cards/forms/2_3/dropdown-default-open.pug
 
         // Third row
-        div.row.third-row
+        .row.third-row
 
           // First column
-          include forms/3_1-row_col.pug
+          .column.first-column
+            include cards/forms/expandable-checkbox/expandable-checkbox-list.pug
+            include cards/forms/expandable-checkbox/expandable-checkbox-list-open.pug
 
           // Second column
-          include forms/3_2-3-row_col.pug
+          .column.second-column
+            .richcheckbox
+              h3 rich checkbox buttons
+            include cards/forms/rich-checkbox/rich-checkbox.pug
+            
+          // Third column
+          .column.third-column
+            .bulletlist
+              h3 bullet list
+            include cards/forms/bullet-list/bullet-list.pug
+            
+        // Fourth row
+        .row.fourth-row
+        
+          // First column
+          .column.first-column
+            include cards/forms/comfort/comfort.pug
+            include cards/forms/comfort/convenience.pug
+        
+          // Second column
+          .column.big-column
+            include cards/forms/comment/comment.pug
+            - text = 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+            +comment('Мурад Сарафанов', '5 дней назад', text)
+            

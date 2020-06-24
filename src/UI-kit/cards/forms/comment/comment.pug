@@ -1,0 +1,15 @@
+head
+  style
+    include comment.scss
+mixin comment(name, date, text)
+  .column.comment
+    .row
+      img(src=require('./cards/forms/comment/img.svg'))
+      .column
+        p.bold= name
+        p= date
+    .row
+      .comment__like
+        include ../like/like-button.pug
+        +like('12')
+      p= text

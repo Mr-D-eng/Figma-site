@@ -1,0 +1,52 @@
+.like {
+	position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+	margin: 0 10px 10px 0;
+}
+
+.LikeButton input {display:none;}
+
+.like-button {
+	position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	background: white;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.like-button p {
+	color: rgba(31, 32, 65, 0.25);
+	text-align: right;
+	margin: 4px 10px 0 0;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+.like-button:before {
+	position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+	background: url(favorite_border.png) no-repeat center;
+}
+
+input:checked + .like-button:before {
+	background: url(favorite.png) no-repeat center;
+}
+
+input:checked + .like-button {
+	border: 1px solid #BC9CFF;
+}
+
+input:checked + .like-button p {
+	color: #BC9CFF;
+}
